@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="options.js"></script>
+<script type="text/javascript">
+  function onClickGDocs(data, tab) {
+    window.open("https://docs.google.com/viewer?url="+encodeURIComponent(data.linkUrl));
+  };
+  var docsUrlPatterns = [];
+  getTypesList().forEach(function (element, index, array) {
+    docsUrlPatterns.push("*://*/*."+element, "*://*/*."+element+"?*", "*://*/*."+element+"#*");
+  });
+  chrome.contextMenus.create({
+    "title" : "Google Docs it",
+    "type" : "normal",
+    "contexts" : ["link"],
+    "targetUrlPatterns" : docsUrlPatterns,
+    "onclick" : onClickGDocs
+  });
+</script>
+</head>
+<body>
+</body>
+</html>

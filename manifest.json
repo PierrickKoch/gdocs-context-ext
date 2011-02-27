@@ -1,0 +1,9 @@
+{
+  "name": "Google Docs viewer - Extension",
+  "version": "0.1",
+  "description": "Right click on a supported document to open with Google Docs viewer.",
+  "icons": {"128" : "docs16.png"},
+  "options_page": "options.html",
+  "background_page": "background.html",
+  "permissions" : ["contextMenus"]
+}
