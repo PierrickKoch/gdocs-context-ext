@@ -1,0 +1,29 @@
+
+GNU LGPL
+jQuery GPLv2/MIT
+
+====
+
+download the packed extension and open with/import it in Chrome/Chromium chrome://extensions/
+https://github.com/pierriko/gdocs-context-ext/raw/master/pack/gdocs-context-ext.crx
+
+====
+
+Google Docs icon from:
+http://docs.google.com/favicon.ico
+
+dislike the menu in the official Google Docs extension:
+https://chrome.google.com/extensions/detail/nnbmlagghjjcbdhgmkedmbmedengocbn
+
+var pattern = new RegExp('^[^\\?#]+\\.(' + types.join('|') + ')((#|\\?).*)?$', 'i');
+cf. 
+http://code.google.com/chrome/extensions/match_patterns.html
+http://code.google.com/chrome/extensions/contextMenus.html
+
+===
+
+try it with:
+http://www.google.com/search?q=filetype:odt
+
+===
+
